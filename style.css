@@ -23,7 +23,6 @@ body{
     padding: 0.5rem;
     border-radius: 10px;
     background-color: #a9b823;
-    z-index: -2;
 }
 #head{
     height: 3rem;
@@ -37,8 +36,7 @@ body{
 }
 #bg-logo{
     position: absolute;
-    left: 50%;
-    z-index: -1;
+    left: 49%;
 }
 #img{
     height: 12rem;
@@ -46,6 +44,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .dimn_img{
     width: 180px; 
@@ -54,6 +53,7 @@ body{
 
 #info{
     background-color: white;
-    height: 100%;
+    flex-grow: 2;
     border-radius: 10px;
+    margin-top: -3rem;
 }
