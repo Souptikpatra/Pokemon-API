@@ -7,6 +7,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .libertinus-math-regular {
   font-family: "Libertinus Math", system-ui;
@@ -17,12 +18,12 @@ body{
 #container{
     position: relative;
     width: 25%;
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
     border-radius: 10px;
-    background-color: #a9b823;
+    margin-bottom: 15px;
 }
 #head{
     height: 3rem;
@@ -45,10 +46,6 @@ body{
     align-items: center;
     justify-content: center;
     z-index: 1;
-}
-.dimn_img{
-    width: 180px; 
-    height: 180px;
 }
 
 #info{
@@ -73,7 +70,6 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 20px;
-    background-color: aqua;
     text-align: center;
     font-size: large;
     margin: 0px;
@@ -114,4 +110,22 @@ body{
 .progressBar{
     height: 5px;
     width: 200px;
+}
+#button{
+    border-radius: 10%;
+    height: 40px;
+    width: max-content;
+    padding: 5px 10px;
+    background-color: aqua;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+#button:hover{
+ cursor: pointer;
+ 
+}
+#button:active{
+    opacity: 0.5;
+    transform: translateY(1px);
 }

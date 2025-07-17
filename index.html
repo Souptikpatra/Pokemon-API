@@ -16,54 +16,53 @@
 <body>
     <div id="container">
         <div id="head">
-            <div id="name" class="libertinus-math-regular">Bulbasour</div>
-            <div id="id" class="libertinus-math-regular">#0471</div>
+            <div id="name" class="libertinus-math-regular"></div>
+            <div id="id" class="libertinus-math-regular"></div>
         </div>
 
         <div id="bg-logo">
-            <img src="./assets/pokeball.png" alt="">
+            <img src="./assets/pokeball.png">
         </div>
 
         <div id="img">
-            <img src="./assets/Bulbasaur.png" class="dimn_img">
+            <img style="width: 180px;height: 180px;" alt="pokemon-img">
         </div>
 
         <div id="info">
-            <div id="pokemon-type">
-                <p class="type libertinus-math-regular"> Poison </p>
-                <p class="type libertinus-math-regular"> Ghost </p>
-            </div>
+            <div id="pokemon-type">    <!-- here types will come --> </div>
 
             <div id="about">
 
                 <p class="aboutText libertinus-math-regular">About</p>
 
                 <div id="abt-cont" style="display: flex; gap: 1.5rem;">
-                    <div id="weight" class="text libertinus-math-regular">
-                        <div style="display: flex; gap: 0.5rem; justify-content: center; align-items: center;">
+                    <div class="text libertinus-math-regular">
+                        <div id="weight" style="display: flex; gap: 0.5rem; justify-content: center; align-items: center;">
                             <img src="./assets/weight.svg" style="width: 20px; height: 20px;">
-                            <p>1850</p>
+                            <!-- here weight comes   <p> 1850 </p>-->
                         </div>
                         <p style="color: gray;">weight</p>
                     </div>
 
                     <div class="bar"></div>
 
-                    <div id="height" class="text libertinus-math-regular">
-                        <div style="display: flex; gap: 0.5rem; justify-content: center; align-items: center;">
+                    <div class="text libertinus-math-regular">
+                        <div  id="height"  style="display: flex; gap: 0.5rem; justify-content: center; align-items: center;">
                             <img src="./assets/height.svg" style="width: 20px; height: 20px;">
-                            <p>5</p>
+                            <!-- here height comes   <p> 5 </p> -->
                         </div>
                         <p style="color: gray;">height</p>
                     </div>
 
                     <div class="bar"></div>
 
-                    <div id="moves" class="text libertinus-math-regular">
-                        <div>
-                            <p style="margin: 0px;">overgrow</p>
-                            <p style="margin: 0px;">chlorofil</p>
-                            <p style="margin: 0px;">berserk</p>
+                    <div class="text libertinus-math-regular">
+                        <div id="moves">
+                            <!--
+                                <p style="margin: 0px;">overgrow</p>
+                                <p style="margin: 0px;">chlorofil</p>
+                                <p style="margin: 0px;">berserk</p>
+                            -->
                         </div>
                         <p style="color: gray;">moves</p>
                     </div>
@@ -71,8 +70,7 @@
                 </div>
             </div>
 
-            <p id="pokemonAbout" class="libertinus-math-regular text" style="margin: 0px; padding-left: 5px;">Lorem
-                ipsum dolor sit amet consectetur adipisicing.</p>
+            <p id="flavour-text" class="libertinus-math-regular text" style="margin: 0px; padding-left: 5px;"> <!-- here text comes --></p>
 
             <div id="baseStates">
                 <p class="libertinus-math-regular basestatsText"> Base Stats </p>
@@ -91,44 +89,38 @@
 
                     <div class="libertinus-math-regular text">
                         <div style="display: flex; align-items: center; gap: 0.5rem;">
-                            <p style="margin: 2px;">80</p>
+                            <p style="margin: 2px;" id="HP-text">80</p>
                             <div class="progressBar">
-                                <div id="HP-bar" style="height: 100%; width: 80%; background-color: chartreuse;"></div>
+                                <div id="HP-bar" style="height: 100%;background-color: chartreuse;"></div>
                             </div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 0.5rem;">
-                            <p style="margin: 2px;">90</p>
+                            <p style="margin: 2px;" id="ATK-text">90</p>
                             <div class="progressBar">
-                                <div id="ATK-bar" style="height: 100%; width: 90%; background-color: chartreuse;"></div>
+                                <div id="ATK-bar" style="height: 100%;background-color: chartreuse;"></div>
                             </div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 0.5rem;">
-                            <p style="margin: 2px;">70</p>
+                            <p style="margin: 2px;" id="DEF-text">70</p>
                             <div class="progressBar">
-                                <div id="DEF-bar" style="height: 100%; width: 70%; background-color: chartreuse;"></div>
+                                <div id="DEF-bar" style="height: 100%; background-color: chartreuse;"></div>
                             </div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 0.5rem;">
-                            <p style="margin: 2px;">30</p>
+                            <p style="margin: 2px;" id="SPD-text">30</p>
                             <div class="progressBar">
-                                <div id="SPD-bar" style="height: 100%; width: 30%; background-color: chartreuse;">
+                                <div id="SPD-bar" style="height: 100%;  background-color: chartreuse;">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
-
-
-
-
             </div>
-
-
         </div>
-
     </div>
+    <button id="button"> Random Card</button>
+    <script src="script.js"></script>
 </body>
 
 </html>
